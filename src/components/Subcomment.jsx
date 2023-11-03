@@ -1,9 +1,9 @@
 import React from "react"
 import { Typography, Grid, Avatar, Button, ButtonGroup } from "@mui/material"
 
-const Comment = () => {
+const Subcomment = () => {
 	return (
-		<Grid container item direction="row" columnSpacing={2} justifyContent={"flex-start"} sx={{ p: "20px 20px 20px 0", m: "5px", borderRadius: "10px", backgroundColor: "white", width: "600px" }}>
+		<Grid container item direction="row" columnSpacing={2} justifyContent={"flex-start"} sx={{ p: "20px 20px 20px 0", marginLeft: "70px", borderRadius: "10px", backgroundColor: "white", width: "535px" }}>
 			<Grid container item xs={1} justifyContent={"center"} sx={{ paddingRight: "20px" }}>
 				<ButtonGroup variant="outlined" orientation="vertical" disableElevation sx={{ border: "0px", width: "20px", borderRadius: "20px" }}>
 					<Button sx={{ border: "0px", backgroundColor: "#faf9fe", "&:hover": { border: "0" } }}>+</Button>
@@ -25,11 +25,15 @@ const Comment = () => {
 					</Grid>
 				</Grid>
 				<Grid item container direction="column" justifyContent={"flex-start"} sx={{ paddingTop: "10px" }}>
-					<Typography variant="body2">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsivness at various breakpoints works really well. </Typography>
+					<Typography variant="body2">
+						Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsivness at various breakpoints works really well. Impressive! Though it seems the drag feature could be improved. But overall it looks
+						incredible. You've nailed the design and the responsivness at various breakpoints works really well.Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsivness at various breakpoints works
+						really well.
+					</Typography>
 				</Grid>
 			</Grid>
 		</Grid>
 	)
 }
 
-export default Comment
+export default Subcomment
